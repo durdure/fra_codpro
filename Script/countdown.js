@@ -14,7 +14,7 @@ function startCountdown() {
     minutesElement.textContent = "00";
     secondsElement.textContent = "00";
     clearInterval(intervalId); 
-    // alert("Count Ended")
+    alert("Count Ended")
     return;
   }
 
