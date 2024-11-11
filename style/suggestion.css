@@ -1,14 +1,15 @@
-.containerOne {
-	/* max-width:400px; */
+/* .containerOne {
+	max-width:400px;
 	width:100%;
-}
+} */
 
 #suggestion_box textarea, #suggestion_box button[type="submit"] { font:400 16px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #suggestion_box {
 	background:#7cace2;
 	padding:25px;
-	/* margin:50px 0; */
+	margin:50px 0;
+	border-radius: 20px;
 }
 
 #suggestion_box h3 {
@@ -44,6 +45,7 @@ fieldset {
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;
+	border-radius: 10px;
 }
 
 #suggestion_box textarea:hover {

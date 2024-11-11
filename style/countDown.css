@@ -1,3 +1,9 @@
+.card-center{
+  width: 600px;
+  margin-left: 20px;
+}
+
+
 #countdown-container {
   display: flex;
   justify-content: center;

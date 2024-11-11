@@ -11,49 +11,99 @@
     <link rel="stylesheet" href="style/add.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="/style/suggestion.css">
+    <link rel="stylesheet" href="/style/buttonOne.css">
+    <link rel="stylesheet" href="/style/calendar.css">
 </head>
-<body>
-    <div class="main">
-     <div class="body">
-        <nav class="header">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-            </label> 
+<body> 
+    <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label> 
 
-             <label class="logo">
-            <i class="fas fa-utensils"></i> <!-- Logo icon -->
-            Fraol
-             </label>
+            <label class="logo">
+        <i class="fas fa-utensils"></i> 
+        Fraol
+            </label>
 
-            <ul>
-            <li class="active" href="#"><a href="">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li > <a href="#">Contact</a> </li>
-            <li><a href="#">Service</a> </li>
-            </ul>
-        </nav>
-
-
-    </div>
-
- 
+        <ul>
+        <li class="active" href="#"><a href="">Home</a></li>
+        <li><a href="./Components/About/About.html">About</a></li>
+        <li > <a href="#">Contact</a> </li>
+        <li><a href="#">Service</a> </li>
+        </ul>
+    </nav>  
+        
     <div class="Containers">
-        <div class="e-card playing">
-            <div class="image"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="infotop">
-            <br/>      
-            Calendar
-            <div class="card-left">
-                <div class="clock">
-                    <div id="time">
-                        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
-                        <span id="period">AM</span>
-                    </div>
+        <div class="e-card">    
+            <div class="clock">
+                <h1>Callendar</h1>
+                <div id="time">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                    <span id="period">AM</span>
                 </div>
+
+
+                <div class="containeOne">
+
+
+                    <div class="calendar">
+                      <div class="header">
+                        <h1 class="header_title">November</h1>
+                        <p class="header_subtitle">2022</p>
+                      </div>
+                      <div class="days-of-week">
+                        <p class="day-name">Sun</p>
+                        <p class="day-name">Mon</p>
+                        <p class="day-name">Tue</p>
+                        <p class="day-name">Wed</p>
+                        <p class="day-name">Thu</p>
+                        <p class="day-name">Fri</p>
+                        <p class="day-name">Sat</p>
+                      </div>
+                      <div class="days">
+                        <p class="day-number day-number_disabled">30</p>
+                        <p class="day-number day-number_disabled">31</p>
+                        <p class="day-number">1</p>
+                        <p class="day-number">2</p>
+                        <p class="day-number">3</p>
+                        <p class="day-number">4</p>
+                        <p class="day-number">5</p>
+                        <p class="day-number">6</p>
+                        <p class="day-number">7</p>
+                        <p class="day-number">8</p>
+                        <p class="day-number">9</p>
+                        <p class="day-number">10</p>
+                        <p class="day-number">11</p>
+                        <p class="day-number">12</p>
+                        <p class="day-number">13</p>
+                        <p class="day-number">14</p>
+                        <p class="day-number">15</p>
+                        <p class="day-number">16</p>
+                        <p class="day-number">17</p>
+                        <p class="day-number">18</p>
+                        <p class="day-number">19</p>
+                        <p class="day-number">20</p>
+                        <p class="day-number">21</p>
+                        <p class="day-number">22</p>
+                        <p class="day-number">23</p>
+                        <p class="day-number">24</p>
+                        <p class="day-number">25</p>
+                        <p class="day-number">26</p>
+                        <p class="day-number">27</p>
+                        <p class="day-number">28</p>
+                        <p class="day-number">29</p>
+                        <p class="day-number">30</p>
+                        <p class="day-number day-number_disabled">1</p>
+                        <p class="day-number day-number_disabled">2</p>
+                        <p class="day-number day-number_disabled">3</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
                 <form id="suggestion_box" action="" method="post">
                     <h3>Suggestion box</h3>
                     <h4>Question of the month:</h4>
@@ -66,17 +116,9 @@
                     <button name="submit" type="submit" id="suggestion_box" data-submit="...Sending" value="text to send">Submit</button>
                     </fieldset>
                 </form>
-            </div>
-
-
-
-             <br>
+           </div>
         </div>
 
-
-
-
-        </div>    
         <div class="card-center">
             <div id="countdown-container">
                 <div id="day">0</div>
@@ -94,50 +136,11 @@
             </center>
             
         </div>
-        <div class="card-right"
-        styl
-        >
-
-
-        
-        <div>
-            <button class="botao">
-                <svg
-                class="mysvg"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                height="24px"
-                width="24px"
-                >
-                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                <g
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    id="SVGRepo_tracerCarrier"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                    <g id="Interface / Download">
-                    <path
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                        stroke-width="2"
-                        stroke="#f1f1f1"
-                        d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
-                        id="Vector"
-                    ></path>
-                    </g>
-                </g>
-                </svg>
-                <span class="texto">Download</span>
-            </button>
-        </div>
 
 
 
-
-        <div>
-            <div class="card">
+        <div class="card-left">
+        <div class="card">
             <ul class="list">
                 <li class="element">
                 <svg
@@ -170,16 +173,6 @@
                 Adjust
                 </li>
             </ul>
-
-            <div id="custom-alert" class="custom-alert">
-                <div class="alert-content">
-                  <p>Countdown finished!</p>
-                  <button onclick="closeAlert()">OK</button>
-                </div>
-            </div>
-
-
-
 
             <div class="separator"></div>
             <ul class="list">
@@ -236,31 +229,14 @@
                 <p class="label">Refresh</p>
                 </li>
             </ul>
-            </div>
-            
-        </div>
-        <div></div>
+         </div>
+            <button class="button" type="button">
+                <span class="button__text">Download</span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+              </button>
         </div>
     </div>
-</div>
-
-
-<!-- Suggestion -->
-
-<!-- Footer -->
-
-
-<div class="containerOne">  
-    
-  </div>
-    
-
-
-
-
-
-  
-
+        
 
    <script src="./Script/date.js"></script>
    <script src="./Script/countdown.js"></script>
