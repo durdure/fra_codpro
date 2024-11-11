@@ -1,0 +1,14 @@
+#countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#countdown-container div {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
