@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="style/download.css">
     <link rel="stylesheet" href="style/add.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="/style/suggestion.css">
 </head>
 <body>
-   <div class="body">
+    <div class="main">
+     <div class="body">
         <nav class="header">
             <input type="checkbox" id="check">
-
             <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
             </label> 
 
              <label class="logo">
             <i class="fas fa-utensils"></i> <!-- Logo icon -->
-            FoodTracker
+            Fraol
              </label>
 
             <ul>
@@ -32,32 +33,50 @@
             <li><a href="#">Service</a> </li>
             </ul>
         </nav>
+
+
     </div>
 
-
+ 
     <div class="Containers">
         <div class="e-card playing">
             <div class="image"></div>
-
             <div class="wave"></div>
             <div class="wave"></div>
             <div class="wave"></div>
-    
-
-        <div class="infotop">
-        <br>      
-        Calendar
-        <div class="card-left">
-            <div class="clock">
-                <div id="time">
-                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
-                    <span id="period">AM</span>
+            <div class="infotop">
+            <br/>      
+            Calendar
+            <div class="card-left">
+                <div class="clock">
+                    <div id="time">
+                        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                        <span id="period">AM</span>
+                    </div>
                 </div>
+                <form id="suggestion_box" action="" method="post">
+                    <h3>Suggestion box</h3>
+                    <h4>Question of the month:</h4>
+                    <p>Here comes the question</p>
+                    <h5>Or general improvement ideas</h5>
+                    <fieldset>
+                    <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                    <button name="submit" type="submit" id="suggestion_box" data-submit="...Sending" value="text to send">Submit</button>
+                    </fieldset>
+                </form>
             </div>
+
+
+
+             <br>
         </div>
-        <br>
-        </div>
-        </div>        
+
+
+
+
+        </div>    
         <div class="card-center">
             <div id="countdown-container">
                 <div id="day">0</div>
@@ -78,6 +97,9 @@
         <div class="card-right"
         styl
         >
+
+
+        
         <div>
             <button class="botao">
                 <svg
@@ -109,12 +131,11 @@
                 </svg>
                 <span class="texto">Download</span>
             </button>
-
-
-            
-
-            
         </div>
+
+
+
+
         <div>
             <div class="card">
             <ul class="list">
@@ -140,7 +161,6 @@
                 </li>
 
 
-
                 <li class="element">
                 <button class="setting-btn">
                     <span class="bar bar1"></span>
@@ -150,6 +170,17 @@
                 Adjust
                 </li>
             </ul>
+
+            <div id="custom-alert" class="custom-alert">
+                <div class="alert-content">
+                  <p>Countdown finished!</p>
+                  <button onclick="closeAlert()">OK</button>
+                </div>
+            </div>
+
+
+
+
             <div class="separator"></div>
             <ul class="list">
                 <li class="element">
@@ -202,7 +233,7 @@
                     height="48" class="svg">
                     <path d="M35.3 12.7c-2.89-2.9-6.88-4.7-11.3-4.7-8.84 0-15.98 7.16-15.98 16s7.14 16 15.98 16c7.45 0 13.69-5.1 15.46-12h-4.16c-1.65 4.66-6.07 8-11.3 8-6.63 0-12-5.37-12-12s5.37-12 12-12c3.31 0 6.28 1.38 8.45 3.55l-6.45 6.45h14v-14l-4.7 4.7z"></path><path fill="none" 
                     d="M0 0h48v48h-48z"></path></svg>
-                <p class="label">Team Access</p>
+                <p class="label">Refresh</p>
                 </li>
             </ul>
             </div>
@@ -211,7 +242,17 @@
         <div></div>
         </div>
     </div>
+</div>
 
+
+<!-- Suggestion -->
+
+<!-- Footer -->
+
+
+<div class="containerOne">  
+    
+  </div>
     
 
 
